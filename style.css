@@ -1,0 +1,272 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #FCF9EC;
+  color: #252a27;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+header {
+  background-color: #619DC6;
+  color: White;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+h2, h3 {
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.logo {
+  padding: 5px 5px ;
+}
+
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li.first-nav a:hover {
+  text-decoration: none;
+}
+
+#home {
+  background-color: #CFEAE0;
+  padding: 100px 50px 20px 50px ;
+  text-align: center;
+}
+
+#home  p {
+  padding: 10px 0px;
+}
+
+h2 .name {
+  font-size: 2.5rem;
+  font-family: "Beau Rivage", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#home button {
+  background-color: #005A9C;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin: 5px 5px;
+}
+
+#home button:hover {
+  background-color: white;
+  color: #252a27;
+  cursor: pointer;
+}
+
+.summary {
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+#about {
+  padding: 50px 50px;
+  text-align: center;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #619DC6;
+}
+
+#about h2, p {
+  padding: 5px;
+}
+
+#about a {
+  text-decoration: underline;
+}
+
+#skills {
+  padding: 50px 50px;
+  text-align: center;
+}
+
+#skills h2 {
+  padding-bottom: 10px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #CFEAE0;
+  padding: 10px;
+  border-radius: 5px;
+  flex-basis: 300px;
+}
+
+.card h3 {
+  padding: 5px;
+}
+
+.card ul li {
+  list-style: none;
+  padding: 3px 0px;
+}
+
+#projects {
+  padding: 50px 50px;
+  text-align: center;
+}
+
+#projects h2 {
+  padding-bottom: 10px;
+}
+
+#projects img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #619DC6;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+}
+
+.grid-items {
+  background-color: #CFEAE0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.grid-one {
+  background-color: #CFEAE0;
+  grid-column: span 2;
+}
+
+#contact {
+  padding: 50px 50px;
+  text-align: center;
+  padding-top: 0;
+  margin: 0;
+}
+
+#contact h2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
+  color: #005A9C;
+}
+
+#contact p a {
+  text-decoration: none;
+  color: #252a27;
+}
+
+footer {
+  background-color: #005A9C;
+  color: white;
+  padding: 20px 50px 100px 50px;
+  text-align: center;
+}
+
+footer ul {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width:600px) {
+  .profile {
+    width: 100px;
+    height: 100px;
+  }
+  header nav {
+    display: none;
+  }
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 250px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .grid-one {
+    grid-column: span 1;
+  }
+}
